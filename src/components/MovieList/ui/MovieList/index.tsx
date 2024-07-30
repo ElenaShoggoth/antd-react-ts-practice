@@ -14,6 +14,12 @@ export const MovieList = observer(() => {
     }
   };
 
+  const myProm = new Promise((res, rej) => {
+    movieTitle ? res("res+++") : rej("---rej");
+  });
+
+  myProm.then((log) => console.log(log)).catch((err) => console.log(err));
+
   return (
     <div>
       <h1 style={{ color: "gray" }}>MovieList</h1>
