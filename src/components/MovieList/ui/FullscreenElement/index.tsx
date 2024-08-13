@@ -1,4 +1,3 @@
-import { Button } from "antd";
 import { useCallback, useLayoutEffect, useRef, useState } from "react";
 import { MovieList } from "../MovieList";
 import { AnimatedButton } from "../AnimatedButton";
